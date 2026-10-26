@@ -25,6 +25,7 @@
     <nav class="nav" aria-label="Principal">
       <a href="../#projetos">Projetos</a>
       <a href="../#principios">Princípios</a>
+      <a href="./" aria-current="page">Identidade</a>
       <a class="gh" href="https://github.com/codigo-publico-brasil">GitHub ↗</a>
     </nav>
   </div>
@@ -270,6 +271,28 @@
     <p class="intro">Estas peças já estão no site da organização e devem ser reproduzidas do mesmo jeito nas aplicações.</p>
 
     <div class="demo">
+      <span class="rotulo">Menu · links, botão de tema e página atual</span>
+      <div class="menu-exemplo">
+        <nav class="nav" aria-label="Exemplo de menu">
+          <a href="#componentes">Projetos</a>
+          <a href="#componentes">Princípios</a>
+          <a href="#componentes" aria-current="page">Identidade</a>
+          <button type="button" class="tema" data-efetivo="light" aria-label="Exemplo: botão no tema claro, mostra a lua"><svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="currentColor"/></svg></button>
+          <button type="button" class="tema" data-efetivo="dark" aria-label="Exemplo: botão no tema escuro, mostra o sol"><svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></g></svg></button>
+          <a class="gh" href="#componentes">GitHub ↗</a>
+        </nav>
+      </div>
+      <ul style="margin:14px 0 0">
+        <li><b>Links em fonte técnica</b>, letras maiúsculas e cantos arredondados. O link da página atual fica em amarelo.</li>
+        <li><b>Botão de tema</b> entre os links e o GitHub. Ele troca entre o tema claro e o escuro: mostra a lua quando o tema é claro e o sol quando é escuro.</li>
+        <li>A página abre no tema do sistema de quem visita. Depois da primeira troca, a escolha fica guardada no navegador, sem cookies, e vale em todas as páginas do site.</li>
+        <li>Sem JavaScript, o botão não aparece e a página continua seguindo o tema do sistema.</li>
+        <li>Em celular, os links somem e ficam só o botão de tema e o GitHub.</li>
+        <li>Toda aplicação deve ter esse botão, com o mesmo comportamento (veja <a href="#apps">Para as aplicações</a>).</li>
+      </ul>
+    </div>
+
+    <div class="demo">
       <span class="rotulo">Ficha de dado · proveniência</span>
       <aside class="ficha">
         <span class="tag">COMO CADA DADO CHEGA</span>
@@ -364,7 +387,7 @@
     <h3>Identidade</h3>
     <ul class="checklist">
       <li>Importa o <code>tokens.css</code> e usa as variáveis (<code>var(--green)</code> etc.). <b>Não copia valores de cor ou fonte.</b></li>
-      <li>Cabeçalho com o <b>símbolo e o nome da aplicação</b> (por exemplo, “No Cargo”), mais um link discreto para o site da organização.</li>
+      <li>Cabeçalho com o <b>símbolo e o nome da aplicação</b> (por exemplo, “No Cargo”), mais um link discreto para o site da organização e o <b>botão de tema claro/escuro</b> (copie o <code>theme.js</code> do site).</li>
       <li>Rodapé com “<b>Um projeto do Código Público Brasil</b>”, licença do código e dos dados, link do repositório e link da fonte dos dados.</li>
       <li>Usa o <b>símbolo do próprio projeto</b> (veja <a href="#logo">Símbolos dos projetos</a>) como ícone da aba (favicon) e como imagem de compartilhamento.</li>
     </ul>
@@ -417,6 +440,7 @@
         <tr><td><a href="logos/dado-publico-brasil.svg" download>dado-publico-brasil.svg</a></td><td>Símbolo do Dado Público Brasil</td></tr>
         <tr><td><a href="logos/no-cargo.svg" download>no-cargo.svg</a></td><td>Símbolo do No Cargo</td></tr>
         <tr><td><a href="logos/quem-decidiu.svg" download>quem-decidiu.svg</a></td><td>Símbolo do Quem Decidiu (provisório)</td></tr>
+        <tr><td><a href="../theme.js" download>theme.js</a></td><td>Botão de tema claro/escuro, para o menu das aplicações</td></tr>
         <tr><td><a href="../tokens.css" download>tokens.css</a></td><td>Cores e fontes como variáveis CSS, com tema claro e escuro</td></tr>
       </tbody>
     </table>

@@ -98,6 +98,10 @@ td.no { color: #b3261e; font-weight: 600; white-space: nowrap; }
 .legenda { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
 .legenda i { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 
+.menu-exemplo { background: var(--hero-bg); border-radius: 12px; padding: 14px 18px; display: flex; justify-content: center; }
+.menu-exemplo .nav { flex-wrap: wrap; justify-content: center; }
+.menu-exemplo .nav a:not(.gh) { display: inline-block; }
+
 /* Listas de regras */
 .regras { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); margin: 18px 0; }
 .regra { border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; background: var(--surface); }
