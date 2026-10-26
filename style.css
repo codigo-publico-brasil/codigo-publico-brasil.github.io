@@ -1,34 +1,3 @@
-:root {
-  --bg: #f6f3ea;
-  --surface: #fffdf8;
-  --ink: #0f1f1a;
-  --muted: #55645d;
-  --line: #d9d3c2;
-  --green: #0b5d3b;
-  --green-ink: #0b5d3b;
-  --blue: #1b3a8a;
-  --yellow: #f2c230;
-  --hero-bg: #0c1f18;
-  --hero-ink: #f6f3ea;
-  --hero-muted: #a9bdb2;
-  --serif: "Fraunces", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0c1511;
-    --surface: #121f19;
-    --ink: #eee9da;
-    --muted: #9fb2a8;
-    --line: #26372e;
-    --green-ink: #5fd39a;
-    --blue: #8fa8ff;
-    --hero-bg: #08110d;
-  }
-}
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -84,7 +53,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .ficha dt { color: #55645d; }
 .ficha dd { margin: 0; text-align: right; word-break: break-all; }
 .ficha .ok { color: #0b5d3b; font-weight: 700; }
-.ficha .semdado { color: #8a6d00; font-weight: 700; }
+.ficha .semdado { color: #735a00; font-weight: 700; }
 
 /* Faixa tricolor discreta */
 .stripe { height: 6px; background: linear-gradient(90deg, var(--green) 0 50%, var(--yellow) 50% 75%, var(--blue) 75%); }
