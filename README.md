@@ -1,6 +1,6 @@
 # Código Público Brasil: site da organização
 
-Página inicial do projeto [Código Público Brasil](https://github.com/codigo-publico-brasil), publicada com GitHub Pages em https://codigo-publico-brasil.github.io. O domínio `codigopublicobrasil.com.br` será o endereço definitivo (ver as issues).
+Página inicial do projeto [Código Público Brasil](https://github.com/codigo-publico-brasil), publicada com GitHub Pages em https://codigopublicobrasil.com.br (o endereço `codigo-publico-brasil.github.io` redireciona para ele).
 
 A página apresenta a missão, o caminho do dado, os projetos (com o repositório e a aplicação de cada um), os princípios, as licenças e como participar.
 

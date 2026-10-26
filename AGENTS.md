@@ -15,6 +15,6 @@ Este repositório é o site da organização Código Público Brasil: uma págin
 
 Só publique (push, criar ou alterar repositório, mexer no Pages ou no domínio) quando o usuário pedir. O site é público e um push na `main` o atualiza.
 
-O domínio `codigopublicobrasil.com.br` depende de DNS configurado pelo usuário no Registro.br. Ele está desativado até a propagação (arquivo `CNAME` removido de propósito). O passo a passo está na issue do domínio.
+O domínio `codigopublicobrasil.com.br` está ativo (arquivo `CNAME` na raiz, DNS no Registro.br, HTTPS obrigatório). Não apague o `CNAME`: sem ele o domínio sai do Pages.
 
 Pendências e decisões abertas são **issues deste repositório**, não arquivos `.md`.
