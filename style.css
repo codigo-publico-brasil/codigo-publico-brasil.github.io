@@ -21,6 +21,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .nav { display: flex; gap: 22px; font-size: 14px; }
 .nav a { text-decoration: none; color: var(--hero-muted); }
 .nav a:hover { color: var(--hero-ink); }
+.nav { align-items: center; }
+.tema { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 1px solid #2c4339; border-radius: 999px; background: none; color: var(--hero-ink); cursor: pointer; }
+.tema:hover { background: #162a21; }
+.tema svg { width: 18px; height: 18px; }
+.tema .sol { display: none; }
+.tema[data-efetivo="dark"] .sol { display: block; }
+.tema[data-efetivo="dark"] .lua { display: none; }
 .nav .gh { color: var(--hero-ink); border: 1px solid #2c4339; padding: 6px 12px; border-radius: 999px; }
 
 /* Hero */

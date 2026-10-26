@@ -12,6 +12,7 @@ Uma página única, em HTML e CSS, sem build, framework ou dependência:
 index.html              conteúdo e estrutura da página
 style.css               visual: tema claro e escuro automático, mobile primeiro
 tokens.css              cores e fontes como variáveis (as aplicações também importam)
+theme.js                botão de tema claro/escuro (único JavaScript da página)
 identidade/             guia de identidade visual: logo, cores, tipografia e regras
 identidade/logos/       símbolos em SVG (organização e projetos)
 .nojekyll               desliga o Jekyll do GitHub Pages

@@ -20,6 +20,7 @@
   --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
 }
 
+/* Tema escuro: automático pelo sistema, ou escolhido com data-theme="dark" (o botão do site). */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0c1511;
@@ -31,4 +32,14 @@
     --blue: #8fa8ff;
     --hero-bg: #08110d;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1511;
+  --surface: #121f19;
+  --ink: #eee9da;
+  --muted: #9fb2a8;
+  --line: #26372e;
+  --green-ink: #5fd39a;
+  --blue: #8fa8ff;
+  --hero-bg: #08110d;
 }
