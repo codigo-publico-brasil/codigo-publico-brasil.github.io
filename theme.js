@@ -19,8 +19,8 @@
   if (escolha === 'light' || escolha === 'dark') raiz.setAttribute('data-theme', escolha);
 
   document.addEventListener('DOMContentLoaded', function () {
-    var nav = document.querySelector('.nav');
-    if (!nav) return;
+    var acoes = document.querySelector('.acoes');
+    if (!acoes) return;
 
     var botao = document.createElement('button');
     botao.type = 'button';
@@ -46,6 +46,6 @@
     escuroDoSistema.addEventListener('change', pintar);
 
     pintar();
-    nav.insertBefore(botao, nav.querySelector('.gh'));
+    acoes.insertBefore(botao, acoes.firstChild);
   });
 })();
