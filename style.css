@@ -56,7 +56,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .ficha .semdado { color: #735a00; font-weight: 700; }
 
 /* Faixa tricolor discreta */
-.stripe { height: 6px; background: linear-gradient(90deg, var(--green) 0 50%, var(--yellow) 50% 75%, var(--blue) 75%); }
+.stripe { height: 6px; background: linear-gradient(90deg, var(--green) 0 50%, var(--yellow) 50% 75%, var(--brand-blue) 75%); }
 
 /* Seções */
 section { padding: 84px 0; }

@@ -10,6 +10,7 @@
   --green: #0b5d3b;
   --green-ink: #0b5d3b;
   --blue: #1b3a8a;
+  --brand-blue: #1b3a8a; /* o azul da marca, igual nos dois temas (--blue clareia no escuro) */
   --yellow: #f2c230;
   --hero-bg: #0c1f18;
   --hero-ink: #f6f3ea;
