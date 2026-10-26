@@ -85,8 +85,8 @@
     <h3>O símbolo</h3>
     <div class="partes">
       <div><i style="background:#0b5d3b"></i><b>Quadrado verde</b><p>A base: os dados oficiais, organizados e estáveis.</p></div>
-      <div><i style="background:#f2c230;transform:rotate(45deg) scale(.78)"></i><b>Losango amarelo</b><p>Referência às cores do país, sem copiar a bandeira.</p></div>
-      <div><i style="background:#1b3a8a;border-radius:50%"></i><b>Círculo azul</b><p>O foco: o dado visto de perto, com a fonte à vista.</p></div>
+      <div><i style="background:none;width:auto;font-style:normal;font-family:var(--mono);font-weight:700">&lt;&gt;</i><b>Colchetes abertos</b><p>Código aberto: tudo o que mostramos pode ser lido e conferido por qualquer pessoa.</p></div>
+      <div><i style="background:#f2c230;border-radius:50%"></i><b>Ponto amarelo</b><p>O dado em foco, com a origem à vista. Nos projetos, o ponto dá lugar a um símbolo próprio.</p></div>
     </div>
 
     <h3>Versões</h3>
@@ -99,6 +99,22 @@
         <small>Tamanho mínimo: símbolo com 24 px de altura</small>
       </div>
     </div>
+
+    <h3>Símbolos dos projetos</h3>
+    <p>Cada projeto usa a <b>mesma moldura</b> (quadrado arredondado e colchetes abertos) com <b>um único símbolo no centro</b> e uma cor de base própria, sempre da paleta. Assim, os projetos são reconhecidos como da mesma família e distintos entre si.</p>
+    <div class="familia">
+      <figure><img src="logos/simbolo.svg" alt="" width="96" height="96"><b>Código Público Brasil</b><span>Organização · ponto</span></figure>
+      <figure><img src="logos/dado-publico-brasil.svg" alt="" width="96" height="96"><b>Dado Público Brasil</b><span>Dados · linhas de dado</span></figure>
+      <figure><img src="logos/no-cargo.svg" alt="" width="96" height="96"><b>No Cargo</b><span>Cargos · pessoa</span></figure>
+      <figure><img src="logos/quem-decidiu.svg" alt="" width="96" height="96"><b>Quem Decidiu</b><span>Decisões · símbolo provisório</span></figure>
+    </div>
+    <ul>
+      <li><b>Moldura fixa:</b> quadrado de 32 unidades com cantos de 7, dois colchetes com traço de 2,4 e pontas arredondadas, sempre na mesma posição.</li>
+      <li><b>Miolo:</b> um símbolo simples, de uma só cor, que se entenda em 16 px e caiba na área central (10 × 13 unidades).</li>
+      <li><b>Base:</b> verde (organização), verde-noite (dados), azul (No Cargo) e amarelo (Quem Decidiu). Sobre amarelo, colchetes e miolo ficam em tinta escura, para manter o contraste.</li>
+      <li><b>Nome ao lado:</b> nome do projeto em Fraunces SemiBold e, abaixo, “um projeto do Código Público Brasil” em fonte técnica pequena.</li>
+      <li><b>Projeto novo:</b> mesma moldura, miolo novo e uma base da paleta. Proponha o símbolo em uma issue antes de adotar.</li>
+    </ul>
 
     <h3>Espaço de respiro e tamanho</h3>
     <p>Deixe ao redor do logo um espaço livre igual a <b>metade da altura do símbolo</b>. Nenhum texto, borda ou imagem entra nessa área. Em tela, o símbolo não deve ter menos de <b>24 px</b>; em impressão, não menos de <b>8 mm</b>.</p>
@@ -126,10 +142,10 @@
 
     <h3>Cores da marca</h3>
     <div class="cores">
-      <div class="cor"><div class="chip" style="background:#0b5d3b"></div><div class="info"><b>Verde</b><span class="mono">#0B5D3B · --green</span><span class="uso">Marca, links e acentos.</span></div></div>
-      <div class="cor"><div class="chip" style="background:#f2c230"></div><div class="info"><b>Amarelo</b><span class="mono">#F2C230 · --yellow</span><span class="uso">Destaque sobre fundo escuro e botão principal.</span></div></div>
-      <div class="cor"><div class="chip" style="background:#1b3a8a"></div><div class="info"><b>Azul</b><span class="mono">#1B3A8A · --blue</span><span class="uso">Acento secundário e conteúdo de IA.</span></div></div>
-      <div class="cor"><div class="chip" style="background:#0c1f18"></div><div class="info"><b>Verde-noite</b><span class="mono">#0C1F18 · --hero-bg</span><span class="uso">Cabeçalhos, rodapés e áreas escuras.</span></div></div>
+      <div class="cor"><div class="chip" style="background:#0b5d3b"></div><div class="info"><b>Verde</b><span class="mono">#0B5D3B · --green</span><span class="uso">Base do símbolo da organização, links e acentos.</span></div></div>
+      <div class="cor"><div class="chip" style="background:#f2c230"></div><div class="info"><b>Amarelo</b><span class="mono">#F2C230 · --yellow</span><span class="uso">Base do Quem Decidiu, destaque sobre fundo escuro e botão principal.</span></div></div>
+      <div class="cor"><div class="chip" style="background:#1b3a8a"></div><div class="info"><b>Azul</b><span class="mono">#1B3A8A · --blue</span><span class="uso">Base do No Cargo, acento secundário e conteúdo de IA.</span></div></div>
+      <div class="cor"><div class="chip" style="background:#0c1f18"></div><div class="info"><b>Verde-noite</b><span class="mono">#0C1F18 · --hero-bg</span><span class="uso">Base do Dado Público Brasil, cabeçalhos, rodapés e áreas escuras.</span></div></div>
     </div>
 
     <h3>Neutras, tema claro</h3>
@@ -349,7 +365,7 @@
       <li>Importa o <code>tokens.css</code> e usa as variáveis (<code>var(--green)</code> etc.). <b>Não copia valores de cor ou fonte.</b></li>
       <li>Cabeçalho com o <b>símbolo e o nome da aplicação</b> (por exemplo, “No Cargo”), mais um link discreto para o site da organização.</li>
       <li>Rodapé com “<b>Um projeto do Código Público Brasil</b>”, licença do código e dos dados, link do repositório e link da fonte dos dados.</li>
-      <li>Usa o símbolo como ícone da aba (favicon) e como imagem de compartilhamento.</li>
+      <li>Usa o <b>símbolo do próprio projeto</b> (veja <a href="#logo">Símbolos dos projetos</a>) como ícone da aba (favicon) e como imagem de compartilhamento.</li>
     </ul>
 
     <h3>Dados</h3>
@@ -394,9 +410,12 @@
     <table>
       <thead><tr><th>Arquivo</th><th>Para quê</th></tr></thead>
       <tbody>
-        <tr><td><a href="logos/simbolo.svg" download>simbolo.svg</a></td><td>Símbolo colorido, versão padrão</td></tr>
+        <tr><td><a href="logos/simbolo.svg" download>simbolo.svg</a></td><td>Símbolo da organização, colorido (versão padrão)</td></tr>
         <tr><td><a href="logos/simbolo-mono-escuro.svg" download>simbolo-mono-escuro.svg</a></td><td>Uma cor, escura, para fundos claros e impressão</td></tr>
         <tr><td><a href="logos/simbolo-mono-claro.svg" download>simbolo-mono-claro.svg</a></td><td>Uma cor, clara, para fundos escuros ou coloridos</td></tr>
+        <tr><td><a href="logos/dado-publico-brasil.svg" download>dado-publico-brasil.svg</a></td><td>Símbolo do Dado Público Brasil</td></tr>
+        <tr><td><a href="logos/no-cargo.svg" download>no-cargo.svg</a></td><td>Símbolo do No Cargo</td></tr>
+        <tr><td><a href="logos/quem-decidiu.svg" download>quem-decidiu.svg</a></td><td>Símbolo do Quem Decidiu (provisório)</td></tr>
         <tr><td><a href="../tokens.css" download>tokens.css</a></td><td>Cores e fontes como variáveis CSS, com tema claro e escuro</td></tr>
       </tbody>
     </table>

@@ -17,7 +17,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .top { background: var(--hero-bg); color: var(--hero-ink); }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--serif); font-weight: 600; font-size: 18px; text-decoration: none; }
-.brand svg { width: 26px; height: 26px; }
+.brand img { width: 26px; height: 26px; }
 .nav { display: flex; gap: 22px; font-size: 14px; }
 .nav a { text-decoration: none; color: var(--hero-muted); }
 .nav a:hover { color: var(--hero-ink); }

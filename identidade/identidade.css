@@ -46,6 +46,12 @@ pre { background: var(--hero-bg); color: var(--hero-ink); padding: 18px 20px; bo
 .nao-faca .amostra img { width: 44px; height: 44px; }
 .nao-faca figure::after { content: "✕"; display: block; color: #b3261e; font-weight: 700; margin-top: 4px; }
 
+.familia { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); margin: 18px 0; }
+.familia figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; padding: 18px 12px; text-align: center; background: var(--surface); }
+.familia img { display: block; margin: 0 auto 12px; width: 96px; height: 96px; }
+.familia b { display: block; font-family: var(--serif); font-size: 17px; line-height: 1.2; }
+.familia span { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; }
+
 /* Cores */
 .cores { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); margin: 18px 0; }
 .cor { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); }
@@ -108,7 +114,7 @@ td.no { color: #b3261e; font-weight: 600; white-space: nowrap; }
 
 @media (max-width: 900px) {
   .palco, .partes, .regras, .faca-evite { grid-template-columns: 1fr; }
-  .cores { grid-template-columns: 1fr 1fr; }
+  .cores, .familia { grid-template-columns: 1fr 1fr; }
   .nao-faca { grid-template-columns: 1fr 1fr; }
   .escala .rot { width: 100%; }
   section.bloco { padding: 48px 0; }

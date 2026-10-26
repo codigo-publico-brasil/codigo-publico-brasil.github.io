@@ -9,9 +9,12 @@ A página apresenta a missão, o caminho do dado, os projetos (com o repositóri
 Uma página única, em HTML e CSS, sem build, framework ou dependência:
 
 ```text
-index.html   conteúdo e estrutura da página
-style.css    visual: tema claro e escuro automático, mobile primeiro
-.nojekyll    desliga o Jekyll do GitHub Pages
+index.html              conteúdo e estrutura da página
+style.css               visual: tema claro e escuro automático, mobile primeiro
+tokens.css              cores e fontes como variáveis (as aplicações também importam)
+identidade/             guia de identidade visual: logo, cores, tipografia e regras
+identidade/logos/       símbolos em SVG (organização e projetos)
+.nojekyll               desliga o Jekyll do GitHub Pages
 ```
 
 As fontes (Fraunces, Inter e JetBrains Mono) vêm do Google Fonts.
