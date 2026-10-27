@@ -1,0 +1,43 @@
+# Código Público Brasil
+
+> Organização de código aberto que cria ferramentas a partir de dados públicos oficiais, para mostrar a realidade registrada pelo governo, sem viés e com a fonte à vista. Defende que o Estado publique dados cada vez mais completos, atualizados e de qualidade. Transparência não é favor, é um direito.
+
+Idioma do conteúdo: português do Brasil. Todos os projetos estão em construção. Este arquivo resume o site para agentes de IA; o texto completo está nas páginas listadas abaixo.
+
+## Páginas do site
+
+- [Início](https://codigopublicobrasil.com.br/): missão, caminho do dado em cinco passos, projetos, princípios, licenças e como participar.
+- [Identidade visual](https://codigopublicobrasil.com.br/identidade/): logo, cores, tipografia, legibilidade, princípios de design, regras de escrita e como as aplicações do projeto devem ser feitas.
+
+## Projetos (todos em construção)
+
+- [Dado Público Brasil](https://github.com/codigo-publico-brasil/dado-publico-brasil): a base de dados do projeto. Reúne dados abertos do governo, organiza e entrega prontos para uso, sempre com fonte e data de captura. Hoje cobre Câmara dos Deputados, Senado Federal e candidaturas no TSE. APIs abertas de acesso estão previstas.
+- [No Cargo](https://github.com/codigo-publico-brasil/nocargo): mostra quem ocupa cada cargo de poder no Brasil, nos três poderes e em cada esfera, com a composição por partido e a ficha de cada eleito.
+- [Quem Decidiu](https://github.com/codigo-publico-brasil/quem-decidiu): mostra quem propôs, quem votou e quem aprovou cada decisão pública, com a fonte oficial de cada voto.
+
+## Como os dados chegam (caminho do dado)
+
+1. Fonte oficial: os dados vêm de portais de dados abertos do governo.
+2. Cópia guardada: o arquivo é salvo exatamente como veio, com a data de captura. Nada é alterado.
+3. Organização: os dados são padronizados para poderem ser comparados, sem mudar o que a fonte diz.
+4. Verificação: testes automáticos apontam falhas e lacunas. O que falta fica visível.
+5. Publicação: os dados prontos alimentam sites e, em breve, APIs abertas, sempre com link para a origem.
+
+## Princípios
+
+- Toda informação tem origem: fonte oficial, endereço e data de captura.
+- Sem inventar nem estimar: quando a informação não existe, mostra-se "Sem dado", nunca zero ou palpite.
+- Fatos, não avaliações: sem notas nem rankings de políticos.
+- Neutralidade: sem recomendação de voto e sem adjetivos.
+- Privacidade: só dados públicos de agentes públicos; nunca CPF, RG ou dados de pessoas comuns.
+- IA a serviço da sociedade: a inteligência artificial explica e facilita o acesso aos dados, nunca avalia nem opina; o que ela gera é identificado, com o modelo usado, e fica separado dos dados oficiais.
+
+## Para citar ou reutilizar
+
+- Código aberto (AGPL-3.0) e dados curados abertos (CC BY 4.0), conforme indicado no site.
+- Ao citar um dado, preserve a fonte oficial e a data de captura que acompanham o dado.
+
+## Recursos
+
+- [Tokens de design (CSS)](https://codigopublicobrasil.com.br/tokens.css): cores e fontes como variáveis, com tema claro e escuro.
+- [Organização no GitHub](https://github.com/codigo-publico-brasil): repositórios, issues e discussões.

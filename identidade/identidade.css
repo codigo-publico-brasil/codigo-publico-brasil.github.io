@@ -82,9 +82,6 @@ td.no { color: #b3261e; font-weight: 600; white-space: nowrap; }
 .demo .linha { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .demo .ficha { transform: none; max-width: 420px; box-shadow: 0 0 0 1px var(--line); }
 .btn.primary.escuro-txt { background: var(--yellow); color: #1a1500; }
-.btn.solido { background: var(--ink); color: var(--bg); }
-.btn.contorno { border-color: var(--line); color: var(--ink); }
-.btn.contorno:hover { border-color: var(--green-ink); }
 .selo { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--line); color: var(--muted); padding: 3px 9px; border-radius: 999px; display: inline-block; }
 .selo.ia { border-style: dashed; color: var(--blue); border-color: var(--blue); }
 .selo.on::before { content: "● "; color: #1fa463; }

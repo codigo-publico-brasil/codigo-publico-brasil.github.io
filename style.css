@@ -50,6 +50,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .btn.primary:hover { filter: brightness(1.06); }
 .btn.ghost { border-color: #2c4339; color: var(--hero-ink); }
 .btn.ghost:hover { background: #162a21; }
+.btn.solido { background: var(--ink); color: var(--bg); }
+.btn.contorno { border-color: var(--line); color: var(--ink); }
+.btn.contorno:hover { border-color: var(--green-ink); }
 
 /* Ficha de dado: o elemento assinatura */
 .ficha { background: #f6f3ea; color: #0f1f1a; border-radius: 14px; padding: 22px; font-family: var(--mono); font-size: 13px; box-shadow: 0 0 0 1px #00000022, 0 24px 60px -20px #000a; transform: rotate(1.2deg); }

@@ -18,3 +18,11 @@ Só publique (push, criar ou alterar repositório, mexer no Pages ou no domínio
 O domínio `codigopublicobrasil.com.br` está ativo (arquivo `CNAME` na raiz, DNS no Registro.br, HTTPS obrigatório). Não apague o `CNAME`: sem ele o domínio sai do Pages.
 
 Pendências e decisões abertas são **issues deste repositório**, não arquivos `.md`.
+
+## SEO e leitura por agentes de IA
+
+- Toda página nova tem `<title>` e `description` próprios, `canonical`, Open Graph, Twitter Card e dados estruturados (JSON-LD), como `index.html`. Entra também no `sitemap.xml` (com `lastmod`) e no `llms.txt`.
+- Um único `<h1>` por página, títulos em ordem (h1, h2, h3) e todo conteúdo em HTML puro: o texto não pode depender de JavaScript para existir.
+- Ao mudar missão, princípios ou projetos, atualize também o `llms.txt` e o JSON-LD da home, para o resumo não divergir do site.
+- `robots.txt` permite tudo, de propósito, inclusive agentes de IA. Não bloqueie rastreadores sem pedido do usuário.
+- `og.png` (1200 × 630) e `apple-touch-icon.png` são imagens geradas: refaça se o logo ou o lema mudarem.

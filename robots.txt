@@ -1,0 +1,36 @@
+# Código Público Brasil: conteúdo aberto. Buscadores e agentes de IA podem ler e indexar tudo.
+User-agent: *
+Allow: /
+
+# Agentes de IA (rastreio, busca e leitura a pedido de quem usa)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://codigopublicobrasil.com.br/sitemap.xml
