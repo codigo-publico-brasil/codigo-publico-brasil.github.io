@@ -127,7 +127,8 @@ footer { background: var(--hero-bg); color: var(--hero-muted); padding: 36px 0; 
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 footer a { color: var(--hero-ink); }
 
-:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--green-ink); outline-offset: 3px; }
+.top :focus-visible, .hero :focus-visible, .panel.dark :focus-visible, footer :focus-visible { outline-color: var(--yellow); }
 
 @media (max-width: 900px) {
   .hero .wrap, .duo { grid-template-columns: 1fr; }

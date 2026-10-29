@@ -108,6 +108,7 @@
       <a href="#componentes">Componentes</a>
       <a href="#escrita">Escrita</a>
       <a href="#apps">Para as aplicações</a>
+      <a href="#fundamentos">Fundamentos</a>
       <a href="#recursos">Recursos</a>
     </nav>
   </div>
@@ -298,9 +299,9 @@
       <li><b>Texto corrido com no mínimo 16 px.</b> Rótulos técnicos pequenos (11–13 px) só em letras maiúsculas e com contraste alto.</li>
       <li><b>Entrelinha de 1,5 a 1,7</b> em parágrafos, e <b>no máximo 68 caracteres por linha</b>.</li>
       <li><b>Contraste mínimo de 4,5 : 1</b> no texto e 3 : 1 em ícones, bordas de campos e gráficos.</li>
-      <li><b>Funciona só com o teclado.</b> O foco é sempre visível (contorno amarelo de 3 px) e a ordem de leitura segue a ordem visual.</li>
+      <li><b>Funciona só com o teclado.</b> O foco é sempre visível (contorno de 3 px, verde sobre fundo claro e amarelo sobre fundo escuro) e a ordem de leitura segue a ordem visual.</li>
       <li><b>Alvos de toque de pelo menos 44 px</b> de altura em celular.</li>
-      <li><b>Mobile primeiro.</b> Tudo precisa funcionar em 360 px de largura, sem rolagem horizontal, exceto tabelas largas, que rolam dentro do próprio quadro.</li>
+      <li><b>Mobile primeiro.</b> Tudo precisa funcionar em 375 px de largura, sem rolagem horizontal, exceto tabelas largas, que rolam dentro do próprio quadro.</li>
       <li><b>Tema claro e escuro</b>: automático, conforme o sistema de quem visita, com um botão para trocar. O contraste é verificado nos dois.</li>
       <li><b>Respeita quem reduz movimento.</b> Animações são mínimas e somem com <code>prefers-reduced-motion</code>.</li>
       <li><b>Idioma declarado</b> (<code>lang="pt-BR"</code>), títulos em ordem (h1, h2, h3) e imagens com texto alternativo.</li>
@@ -491,9 +492,39 @@
     <p class="muted">Se a aplicação precisar funcionar sem depender do site da organização, copie o arquivo <code>tokens.css</code> para o repositório dela e atualize quando houver mudança aqui.</p>
   </section>
 
+  <!-- FUNDAMENTOS -->
+  <section class="bloco" id="fundamentos">
+    <span class="eyebrow">10 · Fundamentos</span>
+    <h2>De onde vêm as regras.</h2>
+    <p class="intro">Onde existe norma ou pesquisa, ela está citada. Onde não existe, a regra é uma escolha do projeto e está marcada assim. WCAG é a sigla das Diretrizes de Acessibilidade para Conteúdo Web, do W3C (versão 2.2). Nível A, AA e AAA indicam o grau de exigência.</p>
+    <div class="tabela-rolavel">
+      <table>
+        <thead><tr><th>Regra</th><th>Base</th></tr></thead>
+        <tbody>
+          <tr><td>Contraste de 4,5 : 1 no texto e 3 : 1 em ícones e gráficos</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#contrast-minimum" target="_blank" rel="noopener">1.4.3</a> e <a href="https://www.w3.org/TR/WCAG22/#non-text-contrast" target="_blank" rel="noopener">1.4.11</a> (AA). O <a href="https://www.gov.br/ds/" target="_blank" rel="noopener">Padrão Digital de Governo</a> também adota o nível AA.</td></tr>
+          <tr><td>Texto corrido com no mínimo 16 px</td><td>Prática comum: 16 px é o tamanho padrão dos navegadores. O WCAG não fixa um tamanho mínimo.</td></tr>
+          <tr><td>Entrelinha de 1,5 a 1,7</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#text-spacing" target="_blank" rel="noopener">1.4.12</a> (AA) exige que o layout aguente entrelinha de 1,5, e <a href="https://www.w3.org/TR/WCAG22/#visual-presentation" target="_blank" rel="noopener">1.4.8</a> (AAA) pede ao menos 1,5.</td></tr>
+          <tr><td>No máximo 68 caracteres por linha</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#visual-presentation" target="_blank" rel="noopener">1.4.8</a> (AAA) limita a 80. A tipografia clássica indica de 45 a 75 (Bringhurst, <i>The Elements of Typographic Style</i>). O 68 é a escolha do projeto dentro dessa faixa.</td></tr>
+          <tr><td>Funciona só com o teclado, foco visível, ordem de leitura</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#keyboard" target="_blank" rel="noopener">2.1.1</a> (A), <a href="https://www.w3.org/TR/WCAG22/#focus-visible" target="_blank" rel="noopener">2.4.7</a> (AA) e <a href="https://www.w3.org/TR/WCAG22/#meaningful-sequence" target="_blank" rel="noopener">1.3.2</a> (A).</td></tr>
+          <tr><td>Alvos de toque de pelo menos 44 px</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#target-size-enhanced" target="_blank" rel="noopener">2.5.5</a> (AAA) pede 44 × 44 px. O nível AA (2.5.8) pede só 24 × 24 px.</td></tr>
+          <tr><td>Sem rolagem horizontal em tela pequena</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#reflow" target="_blank" rel="noopener">1.4.10</a> (AA) exige ausência de rolagem em 320 px de largura. O projeto testa em telas maiores.</td></tr>
+          <tr><td>Respeita quem reduz movimento</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#animation-from-interactions" target="_blank" rel="noopener">2.3.3</a> (AAA).</td></tr>
+          <tr><td>Idioma declarado, imagens e gráficos com equivalente em texto</td><td>Norma: WCAG <a href="https://www.w3.org/TR/WCAG22/#language-of-page" target="_blank" rel="noopener">3.1.1</a> e <a href="https://www.w3.org/TR/WCAG22/#non-text-content" target="_blank" rel="noopener">1.1.1</a> (A).</td></tr>
+          <tr><td>Nenhuma escala de verde para vermelho</td><td>Acessibilidade: cerca de 1 em cada 12 homens tem alguma deficiência de visão de cor, e a mais comum confunde vermelho e verde (<a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness" target="_blank" rel="noopener">National Eye Institute</a>). Não julgar pela cor é também decisão do projeto.</td></tr>
+          <tr><td>Fonte à vista, dado aberto e verificável</td><td>Norma: <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" target="_blank" rel="noopener">Lei de Acesso à Informação</a> (arts. 3º e 8º: formatos abertos, legíveis por máquina, informação atualizada). Referências: <a href="https://opengovdata.org/" target="_blank" rel="noopener">8 princípios dos dados abertos governamentais</a> (2007, dados primários, como coletados na fonte) e <a href="https://opendatacharter.org/principles/" target="_blank" rel="noopener">Carta Internacional de Dados Abertos</a> (2015).</td></tr>
+          <tr><td>Frases curtas, ordem direta, linguagem simples</td><td>Norma: <a href="https://legis.senado.leg.br/norma/41699861/publicacao/41699940" target="_blank" rel="noopener">Lei 15.263/2025</a>, Política Nacional de Linguagem Simples (art. 5º: frases curtas, voz ativa). Vale também para especialistas, segundo testes de usabilidade do <a href="https://www.nngroup.com/articles/plain-language-experts/" target="_blank" rel="noopener">Nielsen Norman Group</a>.</td></tr>
+          <tr><td>Datas em <code>2026-10-26</code> em dados e fichas</td><td>Norma: <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener">ISO 8601</a>.</td></tr>
+          <tr><td>“Sem dado”, mesmo molde, ordem sem avaliação, IA identificada, sem ranking nem recomendação de voto</td><td>Decisão do projeto, para manter a neutralidade. Não vem de estudo.</td></tr>
+          <tr><td>Leve e sem rastreadores</td><td>Decisão do projeto.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">Quem cuida de acessibilidade em sites do governo no Brasil também consulta o <a href="https://emag.governoeletronico.gov.br/" target="_blank" rel="noopener">eMAG</a> e a Lei Brasileira de Inclusão (Lei 13.146/2015, art. 63). Achou algo errado ou desatualizado? Abra uma <a href="https://github.com/codigo-publico-brasil/codigo-publico-brasil.github.io/issues">issue</a>.</p>
+  </section>
+
   <!-- RECURSOS -->
   <section class="bloco" id="recursos">
-    <span class="eyebrow">10 · Recursos</span>
+    <span class="eyebrow">11 · Recursos</span>
     <h2>Arquivos para usar.</h2>
     <p class="intro">Todos livres para uso nas aplicações e nos materiais do projeto, respeitando as regras deste guia.</p>
     <table>
