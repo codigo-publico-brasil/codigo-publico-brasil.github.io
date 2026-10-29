@@ -12,7 +12,7 @@ Idioma do conteúdo: português do Brasil. Todos os projetos estão em construç
 ## Projetos (todos em construção)
 
 - [Dado Público Brasil](https://github.com/codigo-publico-brasil/dado-publico-brasil): a base de dados do projeto. Reúne dados abertos do governo, organiza e entrega prontos para uso, sempre com fonte e data de captura. Hoje cobre Câmara dos Deputados, Senado Federal e candidaturas no TSE. APIs abertas de acesso estão previstas.
-- [No Cargo](https://github.com/codigo-publico-brasil/nocargo): mostra quem ocupa cada cargo de poder no Brasil, nos três poderes e em cada esfera, com a composição por partido e a ficha de cada eleito.
+- [No Cargo](https://nocargo.codigopublicobrasil.com.br) ([código](https://github.com/codigo-publico-brasil/no-cargo)): mostra quem ocupa cada cargo de poder no Brasil, nos três poderes e em cada esfera, com a composição por partido e a ficha de cada eleito.
 - [Quem Decidiu](https://github.com/codigo-publico-brasil/quem-decidiu): mostra quem propôs, quem votou e quem aprovou cada decisão pública, com a fonte oficial de cada voto.
 
 ## Como os dados chegam (caminho do dado)
