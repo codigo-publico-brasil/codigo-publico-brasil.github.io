@@ -53,7 +53,7 @@
     var compartilhar = document.createElement('button');
     compartilhar.type = 'button';
     compartilhar.className = 'tema compartilhar';
-    var icone = '<svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4M5 13v6h14v-6"/></g></svg>';
+    var icone = '<svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 11l8-4.5M8 13l8 4.5"/></g><g fill="currentColor"><circle cx="18" cy="5.5" r="2.8"/><circle cx="6" cy="12" r="2.8"/><circle cx="18" cy="18.5" r="2.8"/></g></svg>';
     var feito = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     compartilhar.innerHTML = icone;
     compartilhar.setAttribute('aria-label', 'Compartilhar esta página');

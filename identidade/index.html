@@ -344,7 +344,7 @@
           <a href="#componentes" aria-current="page">Identidade</a>
         </nav>
         <div class="acoes">
-          <button type="button" class="tema compartilhar" aria-label="Exemplo: botão de compartilhar"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4M5 13v6h14v-6"/></g></svg></button>
+          <button type="button" class="tema compartilhar" aria-label="Exemplo: botão de compartilhar"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 11l8-4.5M8 13l8 4.5"/></g><g fill="currentColor"><circle cx="18" cy="5.5" r="2.8"/><circle cx="6" cy="12" r="2.8"/><circle cx="18" cy="18.5" r="2.8"/></g></svg></button>
           <button type="button" class="tema" data-efetivo="light" aria-label="Exemplo: botão no tema claro, mostra a lua"><svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="currentColor"/></svg></button>
           <button type="button" class="tema" data-efetivo="dark" aria-label="Exemplo: botão no tema escuro, mostra o sol"><svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></g></svg></button>
           <a class="gh" href="#componentes" aria-label="Exemplo: logo do GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-gh"/></svg></a>
@@ -393,6 +393,24 @@
         <a class="btn contorno" href="#componentes">Secundário</a>
       </div>
       <p class="muted" style="margin:12px 0 0;font-size:15px">O botão amarelo é para a ação principal sobre fundos escuros. O sólido escuro (tinta) abre a aplicação. O de contorno é para ações secundárias, como ir ao código.</p>
+    </div>
+
+    <div class="demo">
+      <span class="rotulo">Ícones · só estes, sempre com rótulo para leitores de tela</span>
+      <div class="tabela-rolavel">
+        <table>
+          <thead><tr><th>Ícone</th><th>Nome</th><th>Uso</th></tr></thead>
+          <tbody>
+            <tr><td><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"><use href="#i-gh"/></svg></td><td>GitHub</td><td>Leva ao código ou à organização. Sempre o ícone, nunca um link de texto.</td></tr>
+            <tr><td><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 11l8-4.5M8 13l8 4.5"/></g><g fill="currentColor"><circle cx="18" cy="5.5" r="2.8"/><circle cx="6" cy="12" r="2.8"/><circle cx="18" cy="18.5" r="2.8"/></g></svg></td><td>Compartilhar</td><td>Três pontos ligados, o símbolo padrão de compartilhar. Abre o menu do aparelho ou copia o link.</td></tr>
+            <tr><td><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td>Confirmação</td><td>Troca o ícone de compartilhar por 2 segundos quando o link foi copiado.</td></tr>
+            <tr><td><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="currentColor"/></svg></td><td>Lua</td><td>Botão de tema quando o tema é claro: leva ao escuro.</td></tr>
+            <tr><td><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></g></svg></td><td>Sol</td><td>Botão de tema quando o tema é escuro: leva ao claro.</td></tr>
+            <tr><td><b>↗</b></td><td>Seta externa</td><td>Texto no fim de links que abrem em outra aba ou fora do site.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted" style="margin:12px 0 0;font-size:15px">Todos usam a cor do texto (<code>currentColor</code>) e valem nos dois temas. Não criar ícones novos sem incluí-los aqui.</p>
     </div>
 
     <div class="demo">
