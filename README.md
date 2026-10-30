@@ -9,14 +9,28 @@ A página apresenta a missão, o caminho do dado, os projetos (com o repositóri
 Uma página única, em HTML e CSS, sem build, framework ou dependência:
 
 ```text
-index.html              conteúdo e estrutura da página
-style.css               visual: tema claro e escuro automático, mobile primeiro
-tokens.css              cores e fontes como variáveis (as aplicações também importam)
-theme.js                botões de tema claro/escuro e de compartilhar (único JavaScript da página)
-identidade/             guia de identidade visual: logo, cores, tipografia e regras
-identidade/logos/       símbolos em SVG (organização e projetos)
-.nojekyll               desliga o Jekyll do GitHub Pages
+Página
+  index.html            conteúdo e estrutura da home
+  404.html              página de erro
+  assets/style.css      visual: tema claro e escuro automático, mobile primeiro
+  tokens.css            cores e fontes como variáveis (as aplicações importam deste endereço)
+  theme.js              botões de tema e de compartilhar (único JavaScript; as aplicações copiam)
+
+Identidade
+  identidade/           guia de identidade visual: logo, cores, tipografia e regras
+  identidade/logos/     símbolos em SVG (organização e projetos)
+
+Busca, redes sociais e agentes de IA
+  og.png                imagem de compartilhamento (1200 × 630)
+  apple-touch-icon.png  ícone para a tela inicial do celular
+  sitemap.xml, robots.txt, llms.txt
+
+Publicação
+  CNAME                 domínio codigopublicobrasil.com.br (não apagar)
+  .nojekyll             desliga o Jekyll do GitHub Pages
 ```
+
+`tokens.css`, `theme.js`, `og.png` e `apple-touch-icon.png` ficam na raiz de propósito: as aplicações e as redes sociais usam esses endereços, e o GitHub Pages não faz redirecionamento.
 
 As fontes (Fraunces, Inter e JetBrains Mono) vêm do Google Fonts.
 
