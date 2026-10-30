@@ -1,4 +1,4 @@
-/* Botão de tema claro/escuro. Sem o botão, a página segue o tema do sistema. */
+/* Botões de tema claro/escuro e de compartilhar. Sem eles, a página segue o tema do sistema. */
 (function () {
   var CHAVE = 'tema';
   var raiz = document.documentElement;
@@ -47,5 +47,36 @@
 
     pintar();
     acoes.insertBefore(botao, acoes.firstChild);
+
+    // Botão de compartilhar: abre o menu do aparelho; sem ele, copia o link.
+    if (!navigator.share && !(navigator.clipboard && navigator.clipboard.writeText)) return;
+    var compartilhar = document.createElement('button');
+    compartilhar.type = 'button';
+    compartilhar.className = 'tema compartilhar';
+    var icone = '<svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4M5 13v6h14v-6"/></g></svg>';
+    var feito = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    compartilhar.innerHTML = icone;
+    compartilhar.setAttribute('aria-label', 'Compartilhar esta página');
+    compartilhar.title = 'Compartilhar esta página';
+
+    compartilhar.addEventListener('click', function () {
+      var canonico = document.querySelector('link[rel="canonical"]');
+      var url = canonico ? canonico.href : location.href.split('#')[0];
+      if (navigator.share) {
+        navigator.share({ title: document.title, url: url }).catch(function () { /* cancelado */ });
+        return;
+      }
+      navigator.clipboard.writeText(url).then(function () {
+        compartilhar.innerHTML = feito;
+        compartilhar.setAttribute('aria-label', 'Link copiado');
+        compartilhar.title = 'Link copiado';
+        setTimeout(function () {
+          compartilhar.innerHTML = icone;
+          compartilhar.setAttribute('aria-label', 'Compartilhar esta página');
+          compartilhar.title = 'Compartilhar esta página';
+        }, 2000);
+      }).catch(function () { /* sem permissão para copiar */ });
+    });
+    acoes.insertBefore(compartilhar, acoes.firstChild);
   });
 })();

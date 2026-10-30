@@ -4,7 +4,7 @@ Este repositório é o site da organização Código Público Brasil: uma págin
 
 ## Regras
 
-- **Sem build, framework ou dependência.** Só HTML e CSS, mais o `theme.js` do botão de tema. Não adicione outro JavaScript, gerador de site ou bibliotecas sem proposta aprovada.
+- **Sem build, framework ou dependência.** Só HTML e CSS, mais o `theme.js` dos botões de tema e de compartilhar. Não adicione outro JavaScript, gerador de site ou bibliotecas sem proposta aprovada.
 - **Idioma:** português do Brasil, em todo texto e comentário.
 - **Texto da página:** claro para o público geral e profissional. Sem adjetivos, sem recomendação de voto, sem ranking, sem prometer o que ainda não existe (por exemplo, "todos os dados em um só lugar"). Não altere o texto do topo, os princípios nem a frase "Transparência não é favor, é um direito." sem pedido do usuário.
 - **Aplicações que ainda não existem** mostram o selo "em breve" (`<span class="soon">`), não um link. Só troque pelo link quando o usuário informar o endereço.

@@ -85,7 +85,14 @@ section { padding: 84px 0; }
 .trilha { padding: 0; margin: 0; }
 
 /* Projetos */
+.vitrine { background: var(--surface); border-bottom: 1px solid var(--line); padding: 56px 0; }
+.vitrine .sec-head { margin-bottom: 28px; }
 .cards { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
+.card.destaque { border-color: var(--ink); }
+.card .topo { display: flex; justify-content: space-between; align-items: flex-start; }
+.card .gh { border-color: var(--line); color: var(--ink); width: 44px; height: 44px; margin: -8px -8px 0 0; }
+.card .gh:hover { background: none; border-color: var(--green-ink); }
+.gh.grande { width: 44px; height: 44px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px; display: flex; flex-direction: column; position: relative; }
 .card::before { content: ""; position: absolute; left: 26px; top: -1px; width: 44px; height: 4px; background: var(--c, var(--green)); border-radius: 0 0 4px 4px; }
 .card.c2 { --c: var(--yellow); }
@@ -143,6 +150,7 @@ footer a { color: var(--hero-ink); }
   .nav a { padding: 13px 7px; font-size: 11px; letter-spacing: 0.05em; }
   .ficha { transform: none; }
   section { padding: 60px 0; }
+  .vitrine { padding: 40px 0; }
 }
 
 @media (max-width: 360px) {
